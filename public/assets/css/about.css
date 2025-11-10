@@ -1,0 +1,195 @@
+
+
+:root {
+  /* brand palette */
+  --ink: #0f2238;
+  --muted: #6b7b8f;
+  --line: #e8edf3;
+  --bg: #ffffff;
+  --bg-soft: #f7f9fc;
+  --primary: #0d6efd;
+  --accent: #ff5b2e;
+ 
+  --grad-1: #6a66ff;
+  --grad-2: #8e3cff;
+  --accent: #ff5b2e;
+  --line: #e8edf3;
+  --r: 16px;
+  --shadow-lg: 0 12px 30px rgba(15, 34, 56, .15);
+  --shadow-xl: 0 25px 60px rgba(15, 34, 56, .18);
+
+
+}
+
+
+section.about-banner {
+    padding: 100px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.about-banner h1 {
+    color:var(--bg);
+}
+
+
+/*=============== Experience  start================= */
+#eeat .text-muted{ color: var(--muted) }
+
+.eeat-card{
+  background: var(--bg);
+  border: 1.5px solid rgba(255, 91, 46, .35);            /* --accent tint */
+  border-radius: 14px;
+  padding: 18px 18px 18px 16px;
+  box-shadow: 0 8px 22px rgba(255, 91, 46, .12);         /* soft orange glow */
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.eeat-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(255, 91, 46, .18);
+  border-color: rgba(255, 91, 46, .55);
+}
+
+.eeat-icon{
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  box-shadow: inset 0 -6px 10px rgba(0,0,0,.06);
+}
+
+#eeat h5{
+  color: var(--ink);
+  font-weight: 700;
+}
+
+@media (max-width: 575.98px){
+  .eeat-card{ padding: 16px }
+  .eeat-icon{ width: 52px; height: 52px }
+}
+
+/*=============== Experience  end================= */
+
+/* ================Our Mission start   =================*/
+
+
+/* Uses your existing :root palette:
+   --ink, --muted, --line, --bg, --bg-soft, --primary, --accent, --grad-1, --grad-2
+*/
+
+/* Left pane look (purple style like screenshot) */
+#exp-mission .exp-pane{
+  background: linear-gradient(180deg, var(--grad-1), var(--grad-2));
+  position: relative;
+  isolation: isolate;
+}
+
+/* soft pattern overlay */
+#exp-mission .exp-pane::after{
+  content:"";
+  position:absolute; inset:0;
+  background:
+    radial-gradient(120px 120px at 20% 30%, rgba(255,255,255,.06), transparent 60%),
+    radial-gradient(160px 160px at 80% 60%, rgba(255,255,255,.05), transparent 65%);
+  pointer-events:none;
+  z-index:-1;
+}
+
+#exp-mission .exp-underline{
+  width: 42px; height: 4px; border-radius: 4px;
+  background: #fff; opacity: .9;
+}
+
+/* Skill bars */
+#exp-mission .skill-head{
+  display:flex; justify-content:space-between; align-items:center;
+  color:#fff; font-weight:600; margin-bottom:.35rem;
+}
+#exp-mission .skill-title{ opacity:.95 }
+#exp-mission .skill-val{ font-size:.9rem; opacity:.9 }
+
+#exp-mission .skill-track{
+  width:100%;
+  height:10px;
+  background:#ffffff;
+  border-radius:100px;
+  overflow:hidden;
+  position:relative;
+}
+#exp-mission .skill-fill{
+  position:absolute; left:0; top:0; bottom:0;
+  width:var(--w, 70%);
+  background: var(--accent);
+  border-radius:100px;
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,.08);
+  transition: width .9s ease;
+}
+
+/* Right pane title underline */
+#exp-mission .mission-underline{
+  width: 44px; height: 4px; border-radius: 4px;
+  background: var(--accent);
+}
+
+/* Responsive niceties */
+@media (max-width: 991.98px){
+  #exp-mission .row{ border-radius: 12px }
+  #exp-mission .mission-pane{ border-top:1px solid var(--line) }
+}
+
+
+/* ================Our Mission end   =================*/
+
+contact-us.php-cards .ccard{
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+contact-us.php-cards .ccard:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0,0,0,.12);
+  border-color: rgba(0,0,0,.06);
+}
+
+contact-us.php-cards .ccard-icon{
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(135deg, var(--grad-1), var(--grad-2));
+  box-shadow: 0 4px 10px rgba(106,102,255,.25);
+  font-size: 20px;
+}
+
+contact-us.php-cards h5{
+  color: var(--ink);
+  font-weight: 700;
+  margin: 0;
+}
+contact-us.php-cards .ccard-sub{
+  color: var(--muted);
+  font-size: .95rem;
+}
+contact-us.php-cards .ccard-link{
+  color: var(--ink);
+  text-decoration: none;
+}
+contact-us.php-cards .ccard-link:hover{
+  color: var(--accent);
+}
+
+@media (max-width: 575.98px){
+  contact-us.php-cards .ccard{ padding: 14px }
+  contact-us.php-cards .ccard-icon{ width: 44px. height: 44px. font-size: 18px }
+}

@@ -1,0 +1,63 @@
+.ppc-t {
+    text-align: left;
+}
+
+.get-offer {
+    border: 2px solid #ff5b2e;
+    border-radius: 20px;
+    padding: 40px;
+    background: antiquewhite;
+}
+
+
+
+
+
+
+
+
+    .info-icon{
+      width:40px;height:40px;
+      display:grid;place-items:center;
+      border-radius:50%;background:#f2f2ff;color:#4f46e5;
+      font-size:18px
+    }
+
+    .form-shell{
+      background: var(--bg);
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg);
+      border:1px solid var(--line);
+    }
+
+    .hero-title{font-weight:800;text-align:center}
+    .hero-title .off{color: var(--primary)}
+    .hero-note{color: var(--accent);text-align:center;font-weight:600}
+
+    .form-label{font-weight:600;margin-bottom:.35rem}
+    .form-control,.form-select{
+      border-radius:12px;border:1px solid var(--line);
+      padding:.8rem 1rem
+    }
+    .form-control:focus,.form-select:focus{
+      border-color: var(--accent);
+      box-shadow: 0 0 0 .25rem rgba(255,91,46,.15)
+    }
+
+    .input-group-text{
+      background:#fff;border:1px solid var(--line);
+      border-right:0;border-radius:12px 0 0 12px
+    }
+    .input-group .form-control{border-left:0;border-radius:0 12px 12px 0}
+
+    .btn-accent{
+      background: var(--accent); color:#fff;
+      border:none; border-radius:12px;
+      padding:.9rem 1rem;font-weight:700
+    }
+
+
+
+
+
+
